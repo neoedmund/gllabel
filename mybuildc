@@ -1,0 +1,32 @@
+{
+	verbose : true
+	value : {
+	}
+	compile_flag : [ -std=c++14 ]
+	exe : {
+		demo : {
+			option : [ -lm -lstdc++ ]
+			obj : [ "${demo}" ]
+			lib : [ glfw3 glew glm freetype2 ]
+			libpath : [ ]
+		}
+	}
+	obj : {
+		demo : {
+			src : [ demo.cpp
+				lib/cubic2quad.cpp
+				lib/gllabel.cpp
+				lib/outline.cpp
+				lib/types.cpp
+				lib/vgrid.cpp
+			]
+			include : [ include lib ]
+			lib : [ glfw3 glew glm freetype2 ]
+			option : [ -fPIC ]
+		}
+	}
+
+	xxcompiler : gcc
+
+	xxxconcurrent : 7
+}

@@ -11,7 +11,7 @@ GLFW_INCLUDES=-I/usr/local/include/GLFW
 GLFW_LIBS=-lglfw
 
 # GLEW: OpenGL extension loader
-GLEW_INCLUDES=-I/usr/local/include/GL
+GLEW_INCLUDES=-I/usr/include/GL
 GLEW_LIBS=-lGLEW
 
 # GLM: Matrix math
